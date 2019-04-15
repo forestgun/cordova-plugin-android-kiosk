@@ -13,8 +13,9 @@
                 <param name="android-package" value="com.example.template.kiosk.plugin.Kiosk" />
             </feature>
         </config-file>
+<!--        
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <!-- autorun after the app APK is updated -->
+            -- autorun after the app APK is updated --
             <receiver android:name="com.example.template.kiosk.plugin.MyPackageReplacedEventReceiver">
                 <intent-filter>
                     <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
@@ -41,11 +42,12 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.DEFAULT" />
-                <!-- Handler of app icon (required to be launcher) -->
+                -- Handler of app icon (required to be launcher) --
                 <category android:name="android.intent.category.HOME" />
-                <!-- Handler of Home button -->
+                -- Handler of Home button --
             </intent-filter>
-        </config-file>
+        </config-file> 
+-->
         <source-file src="src/android/KioskActivity.java" target-dir="src/com/example/template/kiosk/plugin" />
         <source-file src="src/android/Kiosk.java" target-dir="src/com/example/template/kiosk/plugin" />
         <source-file src="src/android/MyPackageReplacedEventReceiver.java" target-dir="src/com/example/template/kiosk/plugin" />
